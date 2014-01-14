@@ -19,7 +19,7 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 
 * [NodeJS](http://www.nodejs.org)
 * WebSockets (iPad, iPhone, Chrome, Safari) via Socket.IO
-* No database -- this is only a frontend implementation of card game
+* No database -- this is only a front-end implementation of card game, originally using CouchDB for prototyping purposes but being phased out
 
 #### Frontend
 
