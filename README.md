@@ -1,6 +1,6 @@
 #Massively Multiplayer Online Pokemon Card Game on NodeJS/WebSockets/CouchDB
 
-![Screenshot](https://f.cloud.github.com/assets/25766/1370202/8fb426a6-3a16-11e3-865d-21a9eeb9aec2.png)
+![Node-Pokemon Prototype](https://f.cloud.github.com/assets/25766/1915938/b5b133f2-7d6f-11e3-8f37-3926a1bb3860.png)
 
 
 Web applications have evolved by utilizing push technologies. If you're building anything where users need to interact with other users to create a competitive environment, this queue system is just for you. The importance of queue'ing systems is to help users find other players to play with. Here's some basic code to get you set up, the rest is up to your imagination.
