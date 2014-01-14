@@ -15,6 +15,7 @@
     , "async": "*"
     , "formidable": "*"
     , "ejs": "*"
+    , "socket.io": "*"
     , "ejs-locals": "*"
     }
 }
