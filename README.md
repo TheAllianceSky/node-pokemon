@@ -1,4 +1,4 @@
-#Massively Multiplayer Online Pokemon Card Game on NodeJS/WebSockets/CouchDB
+## Massively Multiplayer Online Pokemon Card Game on NodeJS/WebSockets
 
 ![Character Selection](https://f.cloud.github.com/assets/25766/1915943/cf2ec006-7d6f-11e3-8065-c0021f5ed496.png)
 
@@ -15,9 +15,9 @@ Web applications have evolved by utilizing push technologies. If you're building
 
 Hopefully, this proof of concept will inspire other developers who want to shape the open Web into a more engaging experience (easy to build real-time web applications) on top of a broad subset of consumer technologies (iPad, iPhone, Droids, Nokias, Samsung Galaxy, Chrome, Safari, Firefox, IE, etc).
 
-## Technologies Used
+### Technologies Used
 
-### Backend
+#### Backend
 
 * [NodeJS](http://www.nodejs.org)
 * WebSockets (iPad, iPhone, Chrome, Safari)
@@ -29,19 +29,19 @@ Hopefully, this proof of concept will inspire other developers who want to shape
   * JSONP polling (for cross-domain)
 * No database -- this is only a frontend implementation of card game
 
-### Frontend
+#### Frontend
 
 * SASS with SCSS, [OOCSS](http://wiki.github.com/stubbornella/oocss/)
 * [HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate)
 * CSS3 for drop shadows, transparencies, rounded corners, and animations (card flipping)!
 * [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC
 
-## NodeJS Packages
+### NodeJS Packages
                     
 * npm install
 * node app.js
 
-## MIT License
+### MIT License
 
 Copyright (c) 2010 Jaime Bueza
 
