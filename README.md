@@ -13,14 +13,6 @@ Web applications have evolved by utilizing push technologies. If you're building
 
 Hopefully, this proof of concept will inspire other developers who want to shape the open Web into a more engaging experience (easy to build real-time web applications) on top of a broad subset of consumer technologies (iPad, iPhone, Droids, Nokias, Samsung Galaxy, Chrome, Safari, Firefox, IE, etc).
 
-## Examples of Queueing Systems (Competitive and Non-Competitive)
-
-* World of Warcraft Battleground/Arena queues (finds opponants based on match-making rating)
-* Starcraft 2 game finder (finds players within certain leagues to fight against)
-* Warcraft 3 game finder (finds players within certain ratings based off of ELO rating system)
-* Chess Riot 
-* [WordSquared](http://www.wordsquared.com) -- MMO Scrabble. So, freaking, awesome and inspiring.
-
 ## Technologies Used
 
 ### Backend
@@ -42,11 +34,9 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 * [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC
 
 ## NodeJS Packages
-
-* npm install express
-* npm install ejs  (possibly swapping this out for YUI as a more comfortable templating engine)
-* npm install socket.io (must be a fixed version of it of 0.5.3 from github, not npm -- pst me for help with this)
-* npm install supervisor 
+                    
+* npm install
+* node app.js
 
 ## Data 
 
