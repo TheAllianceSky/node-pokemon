@@ -7,8 +7,6 @@
 
 Web applications have evolved by utilizing push technologies. If you're building anything where users need to interact with other users to create a competitive environment, this queue system is just for you. The importance of queue'ing systems is to help users find other players to play with. Here's some basic code to get you set up, the rest is up to your imagination.
 
-![NodeJS MMO Pokemon Architecture](http://bueza.com/temp/mmo-cards-architecture.png) 
-
 [Video Demonstration](http://youtu.be/Kcsjb1Isweo?hd=1)
 
 [My Blog Post](http://jbueza.blogspot.com/2010/09/nodejs-hack-session-mmo-pokemon-with.html)
@@ -20,21 +18,16 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 #### Backend
 
 * [NodeJS](http://www.nodejs.org)
-* WebSockets (iPad, iPhone, Chrome, Safari)
-* Fallbacks for non-webkit browsers
-  * Adobe Flash Socket
-  * ActiveX HTMLFile (IE)
-  * XHR with multipart encoding
-  * XHR with long-polling
-  * JSONP polling (for cross-domain)
-* No database -- this is only a frontend implementation of card game
+* WebSockets (iPad, iPhone, Chrome, Safari) via Socket.IO
+* No database -- this is only a front-end implementation of card game, originally using CouchDB for prototyping purposes but being phased out
 
 #### Frontend
 
 * SASS with SCSS, [OOCSS](http://wiki.github.com/stubbornella/oocss/)
 * [HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate)
-* CSS3 for drop shadows, transparencies, rounded corners, and animations (card flipping)!
-* [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC
+* CSS3 for drop shadows, transparencies, rounded corners, and animations (card flipping and card tapping)!
+* [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC (Current, looking to transition to React by Facebook)
+
 
 ### NodeJS Packages
                     
