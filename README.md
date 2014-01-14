@@ -18,13 +18,7 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 #### Backend
 
 * [NodeJS](http://www.nodejs.org)
-* WebSockets (iPad, iPhone, Chrome, Safari)
-* Fallbacks for non-webkit browsers
-  * Adobe Flash Socket
-  * ActiveX HTMLFile (IE)
-  * XHR with multipart encoding
-  * XHR with long-polling
-  * JSONP polling (for cross-domain)
+* WebSockets (iPad, iPhone, Chrome, Safari) via Socket.IO
 * No database -- this is only a frontend implementation of card game
 
 #### Frontend
@@ -32,7 +26,8 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 * SASS with SCSS, [OOCSS](http://wiki.github.com/stubbornella/oocss/)
 * [HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate)
 * CSS3 for drop shadows, transparencies, rounded corners, and animations (card flipping)!
-* [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC
+* [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC (Current, looking to transition to React by Facebook)
+
 
 ### NodeJS Packages
                     
