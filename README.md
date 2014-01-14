@@ -1,6 +1,8 @@
 #Massively Multiplayer Online Pokemon Card Game on NodeJS/WebSockets/CouchDB
 
-![Screenshot](https://f.cloud.github.com/assets/25766/1370202/8fb426a6-3a16-11e3-865d-21a9eeb9aec2.png)
+![Character Selection](https://f.cloud.github.com/assets/25766/1915943/cf2ec006-7d6f-11e3-8065-c0021f5ed496.png)
+
+![Node-Pokemon Prototype Board](https://f.cloud.github.com/assets/25766/1915938/b5b133f2-7d6f-11e3-8f37-3926a1bb3860.png)
 
 
 Web applications have evolved by utilizing push technologies. If you're building anything where users need to interact with other users to create a competitive environment, this queue system is just for you. The importance of queue'ing systems is to help users find other players to play with. Here's some basic code to get you set up, the rest is up to your imagination.
@@ -12,14 +14,6 @@ Web applications have evolved by utilizing push technologies. If you're building
 [My Blog Post](http://jbueza.blogspot.com/2010/09/nodejs-hack-session-mmo-pokemon-with.html)
 
 Hopefully, this proof of concept will inspire other developers who want to shape the open Web into a more engaging experience (easy to build real-time web applications) on top of a broad subset of consumer technologies (iPad, iPhone, Droids, Nokias, Samsung Galaxy, Chrome, Safari, Firefox, IE, etc).
-
-## Examples of Queueing Systems (Competitive and Non-Competitive)
-
-* World of Warcraft Battleground/Arena queues (finds opponants based on match-making rating)
-* Starcraft 2 game finder (finds players within certain leagues to fight against)
-* Warcraft 3 game finder (finds players within certain ratings based off of ELO rating system)
-* Chess Riot 
-* [WordSquared](http://www.wordsquared.com) -- MMO Scrabble. So, freaking, awesome and inspiring.
 
 ## Technologies Used
 
@@ -33,8 +27,9 @@ Hopefully, this proof of concept will inspire other developers who want to shape
   * XHR with multipart encoding
   * XHR with long-polling
   * JSONP polling (for cross-domain)
+* No database -- this is only a frontend implementation of card game
 
-###Frontend
+### Frontend
 
 * SASS with SCSS, [OOCSS](http://wiki.github.com/stubbornella/oocss/)
 * [HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate)
@@ -42,78 +37,9 @@ Hopefully, this proof of concept will inspire other developers who want to shape
 * [Blast Mojo Framework](http://www.blastmojo.com) -- Javascript MVC
 
 ## NodeJS Packages
-
-* npm install express
-* npm install ejs  (possibly swapping this out for YUI as a more comfortable templating engine)
-* npm install socket.io (must be a fixed version of it of 0.5.3 from github, not npm -- pst me for help with this)
-* npm install supervisor 
-
-## Data 
-
-### Importing Achievements
-<code>
-  $ cd data
-  $ node import.achievement.js
-</code>
-
-### Importing Users
-<code>
-  $ cd data
-  $ node import.user.js
-</code>
-
-
-##Web Services
-
-### Achievements
-
-
-* View: http://localhost:3000/dialog/achievements
-
-* http://localhost:3000/user/achievements
-
-<code>
-  {
-    "total_rows": 3,
-    "offset": 0,
-    "rows": [{
-      "id": "7f4496ce212a8357fe8c400ab5010ff8",
-      "key": null,
-      "value": {
-        "_id": "7f4496ce212a8357fe8c400ab5010ff8",
-        "_rev": "1-5b79a5397319992c1630ba5d9986e4dc",
-        "name": "Pokemon Master",
-        "category": "Player vs Player",
-        "description": "Win 10 Pokemon Arena Games",
-        "worth": 10
-      }
-    },
-    {
-      "id": "7f4496ce212a8357fe8c400ab5011224",
-      "key": null,
-      "value": {
-        "_id": "7f4496ce212a8357fe8c400ab5011224",
-        "_rev": "1-ff96b86dcb6ff585d21628ae3d67484f",
-        "name": "Pokemon Champion",
-        "category": "Player vs Player",
-        "description": "Win 100 Pokemon Arena Games",
-        "worth": 100
-      }
-    },
-    {
-      "id": "7f4496ce212a8357fe8c400ab5011512",
-      "key": null,
-      "value": {
-        "_id": "7f4496ce212a8357fe8c400ab5011512",
-        "_rev": "1-c6c0a756c0fbd83c49541c10d449bfef",
-        "name": "Pokemon Gladiator",
-        "category": "Player vs Player",
-        "description": "Earn the Gladiator title from Season 1 by being in the top 0.5 percent.",
-        "worth": 1000
-      }
-    }]
-  }
-</code>
+                    
+* npm install
+* node app.js
 
 ## MIT License
 

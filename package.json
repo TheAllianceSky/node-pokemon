@@ -1,0 +1,21 @@
+{
+  "name": "node-pokemon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "express": "*"
+    , "request": "*"
+    , "moment": "*"
+    , "node-uuid": "*"
+    , "winston": "*"
+    , "underscore": "*"
+    , "async": "*"
+    , "formidable": "*"
+    , "ejs": "*"
+    , "socket.io": "*"
+    , "ejs-locals": "*"
+    }
+}

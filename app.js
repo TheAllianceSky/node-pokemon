@@ -1,27 +1,31 @@
-//npm based
-var http = require('http');
-var express = require('express');
-var connect = require('connect');
-var io = require('socket.io');
+/**
+ * Module dependencies.
+ */
 
-//custom libraries
-var achievement = require('./lib/achievement');
-var chat = require('./lib/chat');
-var queue = require('./lib/queue');
-var arena = require('./lib/arena');
+var express = require('express'),
+    engine = require('ejs-locals'),
+    http = require('http'),
+    path = require('path');
+           var io = require('socket.io');
 
+var app = express();
+app.configure(function() {
+  app.set('port', process.env.PORT || 3000);
+  app.set('views', __dirname + '/views');
+  app.engine('ejs', engine);
+  app.set('view engine', 'ejs');
+  app.use(express.favicon());
+  app.use(express.logger('dev'));
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.cookieParser('dell'));
+  app.use(express.session());
+  app.use(app.router);
+  app.use(express.static(path.join(__dirname, 'public')));
+});
 
-var app = module.exports = express.createServer();
-
-// Configuration
-app.configure(function(){
-    app.set('view engine', 'ejs');
-    app.set('views', __dirname + '/views');
-    app.use(connect.bodyDecoder());
-    app.use(connect.methodOverride());
-    app.use(connect.compiler({ src: __dirname + '/public', enable: ['less'] }));
-    app.use(app.router);
-    app.use(connect.staticProvider(__dirname + '/public'));
+app.configure('development', function() {
+  app.use(express.errorHandler());
 });
 
 // Routes
@@ -45,21 +49,6 @@ app.get('/game', function(req, res){
     });
 });
 
-app.get('/dialog/achievements', achievement.index);
-
-app.get('/dialog/arena', arena.index);
-
-
-//JSON web services
-app.get('/user/achievements', achievement.list);
-app.post('/user/achievements', achievement.save);
-
-
-// Only listen on $ node app.js
-if (!module.parent) app.listen(3000);
-
-
-/* Chat Socket Server */ 
-chat.init();
-/* Arena Queue Server */
-queue.init();
+http.createServer(app).listen(process.env.PORT || 3000, function() {
+  console.log("Express server listening on port " + app.get('port'));
+});
